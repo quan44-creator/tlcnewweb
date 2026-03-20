@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문의하기 | THREE LEAVED CLOVER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="장비별 사진/logo/logo1.png" alt="TLC"></a>
+      <div class="nav-links">
+        <a href="index.html">홈</a>
+        <a href="sublimation.html">전사 프린터</a>
+        <a href="textile.html">텍스타일</a>
+        <a href="dtf.html">DTF 프린터</a>
+        <a href="heatpress.html">열전사기</a>
+        <a href="ink.html">잉크</a>
+        <a href="contact.html" class="nav-cta active">문의하기</a>
+      </div>
+      <div class="lang-switch">
+        <a href="contact.html" class="lang-active">KR</a>
+        <a href="en/contact.html">EN</a>
+      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">홈</a><span class="sep">/</span><span>문의하기</span>
+      </div>
+      <h1 class="section-title" style="color:#fff;">문의하기</h1>
+      <p class="section-desc">제품 견적, 기술 지원, 파트너십 등 무엇이든 문의해 주세요.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid fade-up">
+
+        <!-- Form -->
+        <div class="contact-form">
+          <h2 style="font-size:1.8rem; font-weight:800; margin-bottom:0.5rem;">문의 양식</h2>
+          <p style="color:var(--text-muted); margin-bottom:2rem; font-size:0.9rem;">아래 양식을 작성해 주시면 빠르게 연락드리겠습니다.</p>
+
+          <form id="contactForm" onsubmit="handleSubmit(event)">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <input type="text" placeholder="이름 *" required>
+              <input type="text" placeholder="회사명">
+            </div>
+            <input type="email" placeholder="이메일 *" required>
+            <input type="tel" placeholder="연락처">
+            <select>
+              <option value="" disabled selected>관심 제품 선택</option>
+              <option>전사 프린터 M Series (M1904/M1906/M1908)</option>
+              <option>전사 프린터 M1912</option>
+              <option>와이드 포맷 M2608</option>
+              <option>고생산성 G Series (G20/G30)</option>
+              <option>Direct to Textile F1987LP</option>
+              <option>벨트형 K Series (K16/K24/K32)</option>
+              <option>DTF FK Series (FK0602/FK0604/FK0605)</option>
+              <option>DTF FC-30</option>
+              <option>UV DTF UR30</option>
+              <option>발색기 MRO-1855</option>
+              <option>발색기 MRO-1885</option>
+              <option>ALPHA 잉크</option>
+              <option>액세서리 와인더 Winder</option>
+              <option>기타 Other</option>
+            </select>
+            <textarea placeholder="문의 내용 *" required></textarea>
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">문의 보내기 &rarr;</button>
+          </form>
+        </div>
+
+        <!-- Info Card -->
+        <div class="contact-info-card">
+          <h3 style="font-size:1.5rem; font-weight:800; margin-bottom:2rem;">연락처 정보</h3>
+
+          <div class="contact-info-item">
+            <div class="icon">&#127760;</div>
+            <div>
+              <h4>Website</h4>
+              <p><a href="https://www.dtptlc.co.kr" target="_blank" style="color:var(--accent);">www.dtptlc.co.kr</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="icon">&#128222;</div>
+            <div>
+              <h4>전화</h4>
+              <p><a href="tel:031-866-7024" style="color:#fff;">031-866-7024</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="icon">&#9993;</div>
+            <div>
+              <h4>이메일</h4>
+              <p><a href="mailto:chae2787@dtptlc.co.kr" style="color:var(--accent);">chae2787@dtptlc.co.kr</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="icon">&#128205;</div>
+            <div>
+              <h4>주소</h4>
+              <p style="color:#fff;">경기도 포천시 무림길 14</p>
+              <a href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%EB%8F%84%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EB%AC%B4%EB%A6%BC%EA%B8%B8%2014" target="_blank" style="display:inline-flex; align-items:center; gap:0.4rem; color:var(--accent); font-size:0.85rem; margin-top:0.5rem; font-weight:600;">&#128506; 네이버 지도에서 보기 &rarr;</a>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.08);">
+            <p style="font-size:0.85rem; color:rgba(255,255,255,0.4); line-height:1.8;">
+              영업시간<br>
+              월-금: 09:00 ~ 18:00<br>
+              토/일/공휴일 휴무
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="장비별 사진/logo/logo1.png" alt="TLC"><p>디지털 프린팅 솔루션 전문기업</p></div>
+        <div><h4>Products</h4><ul><li><a href="sublimation.html">전사 프린터</a></li><li><a href="textile.html">텍스타일</a></li><li><a href="dtf.html">DTF 프린터</a></li><li><a href="heatpress.html">발색기</a></li><li><a href="ink.html">잉크</a></li></ul></div>
+        <div><h4>Company</h4><ul><li><a href="index.html">회사 소개</a></li><li><a href="contact.html">문의하기</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="tel:031-866-7024">031-866-7024</a></li><li><a href="mailto:chae2787@dtptlc.co.kr">chae2787@dtptlc.co.kr</a></li><li>경기도 포천시 무림길 14</li><li><a href="https://www.dtptlc.co.kr" target="_blank">www.dtptlc.co.kr</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 THREE LEAVED CLOVER. All rights reserved.</span><span>세잎클로버</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
